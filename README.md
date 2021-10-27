@@ -22,6 +22,15 @@ Nevertheless, we maintain a bunch of manual tests in the following purposes:
 - "visualization" of possibilities of `DMNTK`,
 - writing documentation with working examples.
 
+## Installing dependencies
+
+Manual test framework requires `dmntk` binary to be available on path.
+The simplest way to install `dmntk` is to use `cargo` tool:
+
+```
+$ cargo install dmntk --features=bin
+```
+
 ## Running manual tests
 
 ```
