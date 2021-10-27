@@ -18,13 +18,13 @@ Project `DMNTK` is tested automatically with all kind of tests available in Rust
 
 Nevertheless, we maintain a bunch of manual tests in the following purposes:
 - manual testing of edge cases,
-- fast diagnostics of reported issues,
-- "visualization" of possibilities of `DMNTK`,
-- writing documentation with working examples.
+- diagnostics of reported issues,
+- visualization of functionalities provided by `DMNTK`,
+- writing documentation.
 
 ## Installing dependencies
 
-Manual test framework requires `dmntk` binary to be available on path.
+Manual test framework requires `dmntk` binary to be installed.
 The simplest way to install `dmntk` is to use `cargo` tool:
 
 ```
