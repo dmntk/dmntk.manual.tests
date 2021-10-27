@@ -3,6 +3,9 @@
 RUN_FILE=run.sh
 WORK_DIR=$(pwd)
 
+PASSED=0
+FAILED=0
+
 run_test () {
   cd $1
   if [ -f "actual" ]; then
@@ -11,15 +14,16 @@ run_test () {
   ./$2 > actual
   diff expected actual -y >> /dev/null 2>&1
   if [ $? -eq 0 ]; then
+    PASSED=$((PASSED+1))
     rm actual
     echo "$1/$2....OK"
   else
+    FAILED=$((FAILED+1))
     echo "$1/$2....FAILED"
     echo "EXPECTED                                                                                ACTUAL"
     echo "-------------------------------------------------------------------------------------   -------------------------------------------------------------------------------------"
     diff expected actual -y --color=always -W 180
     rm actual
-    exit 1
   fi
   cd $WORK_DIR
 }
@@ -30,6 +34,6 @@ for dir in $(find ./tests -type d); do
   fi
 done
 
-echo "All tests passed."
+echo "$PASSED passed, $FAILED failed"
 
 exit 0
