@@ -4,8 +4,8 @@
 
 - [FEEL](#FEEL)
   - [Literals](#Literals)
-    - [Arithmetic](#Arithmetic)
-      - [Addition](#Addition)
+  - [Arithmetic](#Arithmetic)
+    - [Addition](#Addition)
 
 # FEEL
 
