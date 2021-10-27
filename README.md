@@ -40,7 +40,7 @@ $ ./run.sh
 ## Test directories structure
 
 Test are organized in directories starting from `./tests` (root directory).
-Each directory may contain either other directories (subdirectories) or test files.
+Each directory may contain either subdirectories or test files.
 
 ## Test files structure
 
