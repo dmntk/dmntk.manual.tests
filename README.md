@@ -20,7 +20,7 @@ Nevertheless, we maintain a bunch of manual tests in the following purposes:
 - manual testing of edge cases,
 - diagnostics of reported issues,
 - visualization of functionalities provided by `DMNTK`,
-- writing documentation [The DMNTK Book](https://github.com/dmntk/book).
+- writing documentation, see: [The DMNTK Book](https://github.com/dmntk/book).
 
 ## Installing dependencies
 
