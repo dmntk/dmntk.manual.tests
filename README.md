@@ -1,6 +1,6 @@
 **DMNTK** | Decision Model and Notation Toolkit
 
-# dmntk-manual-tests
+# Manual tests
 
 [![MIT licensed][mit-badge]][mit-url]
 [![Apache 2.0 licensed][apache-badge]][apache-url]
@@ -12,15 +12,15 @@
 
 ## Overview
 
-Manual tests for project `DMNTK`.
+This repository contains manual tests for **DMNTK** project.
 
-Project `DMNTK` is tested automatically with all kind of tests available in Rust.
+Project **DMNTK** is tested automatically with all types of tests available in Rust.
 
 Nevertheless, we maintain a bunch of manual tests in the following purposes:
 - manual testing of edge cases,
 - diagnostics of reported issues,
-- visualization of functionalities provided by `DMNTK`,
-- writing documentation, see: [The DMNTK Book](https://github.com/dmntk/book).
+- visualization of functionalities provided by **DMNTK**,
+- writing documentation, see: [dmntk.io](https://dmntk.io).
 
 ## Installing dependencies
 
@@ -28,7 +28,7 @@ Manual test framework requires `dmntk` binary to be installed.
 The simplest way to install `dmntk` is to use `cargo` tool:
 
 ```
-$ cargo install dmntk --features=bin
+$ cargo install dmntk
 ```
 
 ## Running manual tests
@@ -60,6 +60,9 @@ Directory `tests/feel/addition/0001` contains a test that checks addition operat
 
 ## License
 
-**dmntk-manual-tests** is distributed under the terms of both
-the MIT&nbsp;license and the Apache&nbsp;License&nbsp;(Version&nbsp;2.0).
-See [LICENSE-MIT](LICENSE-MIT) and [LICENSE-APACHE](LICENSE-APACHE) for details.
+Licensed under either of
+
+- [MIT license](https://opensource.org/licenses/MIT) ([LICENSE-MIT](https://github.com/dmntk/dmntk.rs/blob/main/LICENSE-MIT))
+- [Apache License, Version 2.0](https://www.apache.org/licenses/LICENSE-2.0) ([LICENSE-APACHE](https://github.com/dmntk/dmntk.rs/blob/main/LICENSE-APACHE))
+
+at your option.
