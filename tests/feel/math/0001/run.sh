@@ -1,3 +1,3 @@
 #!/usr/bin/env bash
 
-dmntk etx 0001.feel 0001.ctx
+dmntk efl 0001.ctx 0001.feel

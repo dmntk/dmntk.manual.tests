@@ -20,9 +20,12 @@ run_test () {
   else
     FAILED=$((FAILED+1))
     echo "$1/$2....FAILED"
+    echo ""
     echo "EXPECTED                                                                                ACTUAL"
     echo "-------------------------------------------------------------------------------------   -------------------------------------------------------------------------------------"
     diff expected actual -y --color=always -W 180
+    echo "Full report:"
+    diff expected actual --color=always
     rm actual
   fi
   cd $WORK_DIR
