@@ -18,4 +18,4 @@ rm data.json
 curl -s -X POST http://127.0.0.1:22022/definitions/deploy > /dev/null 2>&1
 
 # evaluate model using generic input data format
-curl -s -d '{"model":"compliance-level-2-test-0001","invocable":"Greeting Message","input":[{"name":"Full Name","value":{"simple":{"type":"xsd:string","text":"John Doe","isNil":false}}}]}' -H "Content-Type: application/json" -X POST http://127.0.0.1:22022/g/eval
+curl -s -d '{"model":"compliance-level-2-test-0001","invocable":"Greeting Message","input":[{"name":"Full Name","value":{"simple":{"type":"xsd:string","text":"John Doe","isNil":false}}}]}' -H "Content-Type: application/json" -X POST http://127.0.0.1:22022/tck/eval
