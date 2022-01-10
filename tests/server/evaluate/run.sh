@@ -18,7 +18,7 @@ rm data.json
 curl -s -X POST http://127.0.0.1:22022/definitions/deploy > /dev/null 2>&1
 
 # evaluate invocable in model
-curl -s -d '{Full Name:"John Doe"}' -H "Content-Type: application/json" -X POST http://127.0.0.1:22022/eval/compliance-level-2-test-0001/Greeting%20Message
+curl -s -d '{Full Name:"John Doe"}' -H "Content-Type: application/json" -X POST http://127.0.0.1:22022/evaluate/compliance-level-2-test-0001/Greeting%20Message
 
 # TODO names should be normalized
-# curl -s -d '{"Full Name":"John Doe"}' -H "Content-Type: application/json" -X POST http://127.0.0.1:22022/eval/compliance-level-2-test-0001/Greeting%20Message
+# curl -s -d '{"Full Name":"John Doe"}' -H "Content-Type: application/json" -X POST http://127.0.0.1:22022/evaluate/compliance-level-2-test-0001/Greeting%20Message
