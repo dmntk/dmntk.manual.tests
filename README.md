@@ -4,11 +4,13 @@
 
 [![MIT licensed][mit-badge]][mit-url]
 [![Apache 2.0 licensed][apache-badge]][apache-url]
+[![Contributor Covenant][coc-badge]](CODE_OF_CONDUCT.md)
 
 [mit-badge]: https://img.shields.io/badge/License-MIT-blue.svg
 [mit-url]: LICENSE-MIT
 [apache-badge]: https://img.shields.io/badge/License-Apache%202.0-blue.svg
 [apache-url]: LICENSE-APACHE
+[coc-badge]: https://img.shields.io/badge/Contributor%20Covenant-2.1-4baaaa.svg
 
 ## Overview
 
