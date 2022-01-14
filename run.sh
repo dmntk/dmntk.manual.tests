@@ -1,5 +1,10 @@
 #!/usr/bin/env bash
 
+# display actual dmntk version
+echo "┌──────────────────────────────┐"
+echo "│ Tested version: $(dmntk -V) │"
+echo "└──────────────────────────────┘"
+
 RUN_FILE=run.sh
 WORK_DIR=$(pwd)
 
@@ -22,7 +27,7 @@ run_test () {
     echo "$1/$2....FAILED"
     echo ""
     echo "EXPECTED                                                                                  ACTUAL"
-    echo "---------------------------------------------------------------------------------------   ---------------------------------------------------------------------------------------"
+    echo "───────────────────────────────────────────────────────────────────────────────────────   ───────────────────────────────────────────────────────────────────────────────────────"
     diff expected actual -y --color=always -W 180
     echo ""
     echo ""
@@ -39,6 +44,8 @@ for dir in $(find ./tests -type d); do
   fi
 done
 
-echo "$PASSED passed, $FAILED failed"
+echo "────────────────────────────────"
+echo " $PASSED passed, $FAILED failed"
+echo "────────────────────────────────"
 
 exit 0
