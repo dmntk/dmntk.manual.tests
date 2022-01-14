@@ -1,9 +1,10 @@
 #!/usr/bin/env bash
 
 # display actual dmntk version
-echo "┌──────────────────────────────┐"
-echo "│ Tested version: $(dmntk -V) │"
-echo "└──────────────────────────────┘"
+echo " "
+echo "────────────────────────────────────"
+echo " Tested version: $(dmntk -V)"
+echo "────────────────────────────────────"
 
 RUN_FILE=run.sh
 WORK_DIR=$(pwd)
@@ -44,8 +45,9 @@ for dir in $(find ./tests -type d | sort); do
   fi
 done
 
-echo "────────────────────────────────"
+echo "────────────────────────────────────"
 echo " $PASSED passed, $FAILED failed"
-echo "────────────────────────────────"
+echo "────────────────────────────────────"
+echo " "
 
 exit 0
