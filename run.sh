@@ -26,19 +26,19 @@ run_test () {
     FAILED=$((FAILED+1))
     echo "$1/$2....FAILED"
     echo ""
-    echo "EXPECTED                                                                                  ACTUAL"
-    echo "───────────────────────────────────────────────────────────────────────────────────────   ───────────────────────────────────────────────────────────────────────────────────────"
-    diff expected actual -y --color=always -W 180
+    echo -e "\e[32mEXPECTED\e[0m                                                                                                \e[31mACTUAL\e[0m"
+    echo -e "\e[32m─────────────────────────────────────────────────────────────────────────────────────────────────\e[0m       \e[31m─────────────────────────────────────────────────────────────────────────────────────────────────\e[0m"
+    diff expected actual -y --color=always -W 200
     echo ""
     echo ""
     echo "Full report:"
-    diff expected actual --color=always
+    diff actual expected --color=always
     rm actual
   fi
   cd $WORK_DIR
 }
 
-for dir in $(find ./tests -type d); do
+for dir in $(find ./tests -type d | sort); do
   if [ -f "$dir/$RUN_FILE" ]; then
     run_test "$dir" "$RUN_FILE"
   fi
