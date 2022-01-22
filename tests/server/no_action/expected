@@ -1,0 +1,27 @@
+dmntk 0.0.46-dev
+DMNTK | Decision Model and Notation Toolkit
+
+USAGE:
+    dmntk <SUBCOMMAND>
+
+FLAGS:
+    -h, --help       Prints help information
+    -V, --version    Prints version information
+
+SUBCOMMANDS:
+    srv     Run DMNTK as a service
+    edm     Evaluate DMN Model
+    edt     Evaluate Decision Table
+    efe     Evaluate FEEL Expression
+    pdm     Parse DMN Model
+    pdt     Parse Decision Table
+    pfe     Parse FEEL Expression
+    tdm     Test DMN Model
+    tdt     Test Decision Table
+    tfe     Test FEEL Expression
+    xdm     eXport DMN Model
+    xdt     eXport Decision Table
+    xfe     eXport FEEL Expression
+    rdt     Recognize Decision Table
+    exs     Generate examples in current directory
+    help    Prints this message or the help of the given subcommand(s)
