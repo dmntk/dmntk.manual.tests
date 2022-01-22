@@ -27,7 +27,7 @@ Nevertheless, we maintain a bunch of manual tests in the following purposes:
 ## Installing dependencies
 
 Manual test framework requires `dmntk` binary to be installed.
-The simplest way to install `dmntk` is to use `cargo` tool:
+The simplest way to install `dmntk` is from source using `cargo`:
 
 ```
 $ cargo install dmntk
@@ -37,6 +37,12 @@ $ cargo install dmntk
 
 ```
 $ ./run.sh
+```
+
+To run manual tests for currently developed version of `dmntk`, set the path to the binary:
+
+```
+$ PATH=/home/your_user_name/your_path_to_dmntk_project/target/debug:$PATH ./run.sh
 ```
 
 ## Test directories structure
@@ -58,7 +64,7 @@ Directory `tests/feel/addition/0001` contains a test that checks addition operat
 1. Tested expression is `1 + 1` and is saved in `0001.feel` file. 
 2. Test execution context is empty `{}` and is saved in `0001.ctx` file.
 3. Expected value is `2` and is saved in `expected` file.
-4. Script that executes a test contains a command `dmntk etx 0001.feel 0001.ctx` and is saved in `run.sh` file.
+4. Script that executes a test contains a command `dmntk efe 0001.ctx 0001.feel` and is saved in `run.sh` file.
 
 ## License
 
