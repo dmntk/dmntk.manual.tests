@@ -13,11 +13,11 @@ PASSED=0
 FAILED=0
 
 run_test () {
-  cd $1
+  cd "$1" || exit 1
   if [ -f "actual" ]; then
     rm actual
   fi
-  ./$2 > actual
+  ./"$2" > actual
   diff expected actual -y >> /dev/null 2>&1
   if [ $? -eq 0 ]; then
     PASSED=$((PASSED+1))
@@ -36,7 +36,7 @@ run_test () {
     diff actual expected --color=always
     rm actual
   fi
-  cd $WORK_DIR
+  cd "$WORK_DIR" || exit 1
 }
 
 for dir in $(find ./tests -type d | sort); do

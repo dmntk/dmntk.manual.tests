@@ -3,6 +3,7 @@
 # run dmntk as a server
 dmntk srv > /dev/null 2>&1 & 
 _pid=$!
+sleep 0.1
 
 # delete all existing models from workspace
 curl -s -X POST http://0.0.0.0:22022/definitions/clear > /dev/null 2>&1
