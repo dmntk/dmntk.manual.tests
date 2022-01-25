@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
 
-# evaluate feel expression
+# evaluate FEEL expression
 dmntk efe input.ctx input.feel
