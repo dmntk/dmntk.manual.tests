@@ -1,0 +1,14 @@
+
+Model
+ ├─ name: compliance-level-2-test-0001
+ ├─ namespace: https://dmntk.io/2_0001
+ └─ id: _c910c9ba-c584-4ac9-a773-1e6de185cd85
+
+Decisions
+ └─ Greeting Message
+
+Input data
+ └─ Full Name (string)
+
+MORE DETAILS WILL BE IMPLEMENTED...
+
