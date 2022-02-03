@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
 
 # test decision table
-dmntk tdt -s input.test input.dtb
+dmntk tdt -c never input.test input.dtb
